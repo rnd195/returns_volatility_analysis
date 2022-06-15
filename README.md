@@ -64,20 +64,8 @@ Finally, there appears to be no clear pattern in the RS and RK series.
 
 
 ```R
-head(index(amgn))
-# => Daily data
 summary(amgn)
 ```
-
-
-<style>
-.list-inline {list-style: none; margin:0; padding: 0}
-.list-inline>li {display: inline-block}
-.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
-</style>
-<ol class=list-inline><li><time datetime="2010-01-05">2010-01-05</time></li><li><time datetime="2010-01-06">2010-01-06</time></li><li><time datetime="2010-01-07">2010-01-07</time></li><li><time datetime="2010-01-08">2010-01-08</time></li><li><time datetime="2010-01-11">2010-01-11</time></li><li><time datetime="2010-01-12">2010-01-12</time></li></ol>
-
-
 
 
          Index                 ret                   RV          
@@ -140,8 +128,8 @@ shapiro.test(as.numeric(amgn$ret))
 
 
 ​    
-    	Shapiro-Wilk normality test
-    
+​    	Shapiro-Wilk normality test
+​    
     data:  as.numeric(amgn$ret)
     W = 0.97924, p-value = 6.667e-14
 
@@ -331,9 +319,9 @@ plot(
 
 
 ​    
-    Call:
-    tslm(formula = rv_t0 ~ rv_t1 + rv5 + rv22, data = har_data_ts)
-    
+​    Call:
+​    tslm(formula = rv_t0 ~ rv_t1 + rv5 + rv22, data = har_data_ts)
+​    
     Residuals:
           Min        1Q    Median        3Q       Max 
     -0.009147 -0.002274 -0.000662  0.001298  0.040573 
@@ -411,9 +399,9 @@ plot(
 
 
 ​    
-    Call:
-    tslm(formula = rv_t0 ~ rvn + rvp + rv5 + rv22, data = har_data_ts)
-    
+​    Call:
+​    tslm(formula = rv_t0 ~ rvn + rvp + rv5 + rv22, data = har_data_ts)
+​    
     Residuals:
           Min        1Q    Median        3Q       Max 
     -0.009570 -0.002265 -0.000651  0.001270  0.040331 
@@ -498,9 +486,9 @@ plot(
 
 
 ​    
-    Call:
-    tslm(formula = rv_t0 ~ rv_t1 + rv5 + rv22 + rk + rs, data = har_data_ts)
-    
+​    Call:
+​    tslm(formula = rv_t0 ~ rv_t1 + rv5 + rv22 + rk + rs, data = har_data_ts)
+​    
     Residuals:
           Min        1Q    Median        3Q       Max 
     -0.008874 -0.002246 -0.000635  0.001240  0.040912 
@@ -570,10 +558,10 @@ plot(
 
 
 ​    
-    *---------------------------------*
-    *          GARCH Model Fit        *
-    *---------------------------------*
-    
+​    *---------------------------------*
+​    *          GARCH Model Fit        *
+​    *---------------------------------*
+​    
     Conditional Variance Dynamics 	
     -----------------------------------
     GARCH Model	: realGARCH(1,1)
@@ -664,7 +652,7 @@ plot(
     Negative Sign Bias  2.4960 0.01267  **
     Positive Sign Bias  0.1003 0.92012    
     Joint Effect        7.6793 0.05313   *
-
+    
     Adjusted Pearson Goodness-of-Fit Test:
     ------------------------------------
       group statistic p-value(g-1)
@@ -672,7 +660,7 @@ plot(
     2    30     33.80       0.2467
     3    40     40.53       0.4026
     4    50     47.60       0.5300
-
+    
     Elapsed time : 1.475847 
 
 
@@ -774,10 +762,10 @@ plot(
 
 
 ​    
-    *---------------------------------*
-    *          GARCH Model Fit        *
-    *---------------------------------*
-    
+​    *---------------------------------*
+​    *          GARCH Model Fit        *
+​    *---------------------------------*
+​    
     Conditional Variance Dynamics 	
     -----------------------------------
     GARCH Model	: sGARCH(1,1)
@@ -850,7 +838,7 @@ plot(
     Negative Sign Bias   1.943 0.0522   *
     Positive Sign Bias   1.095 0.2737    
     Joint Effect         9.773 0.0206  **
-
+    
     Adjusted Pearson Goodness-of-Fit Test:
     ------------------------------------
       group statistic p-value(g-1)
@@ -858,7 +846,7 @@ plot(
     2    30     70.48    2.606e-05
     3    40     62.56    9.712e-03
     4    50     84.60    1.193e-03
-
+    
     Elapsed time : 0.06282997 
 
 
