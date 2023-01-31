@@ -1485,7 +1485,7 @@ for (i in 1:length(error_cols)) {
     }
 }
 
-writeLines("P-values of a two-sided DM test")
+writeLines("P-values of a one-sided DM test")
 df_dm
 ```
 
