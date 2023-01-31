@@ -1489,7 +1489,7 @@ writeLines("P-values of a two-sided DM test")
 df_dm
 ```
 
-    P-values of a two-sided DM test
+    P-values of a one-sided DM test
 
 
 
